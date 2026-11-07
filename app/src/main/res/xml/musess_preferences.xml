@@ -1,0 +1,77 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        app:icon="@drawable/ic_social_emoji_symbols"
+        app:key="name"
+        app:title="@string/profile_name"
+        app:useSimpleSummaryProvider="true" />
+
+    <PreferenceCategory app:title="@string/proxy_cat">
+        <EditTextPreference
+            app:icon="@drawable/ic_hardware_router"
+            app:key="serverAddress"
+            app:title="@string/server_address"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_maps_directions_boat"
+            app:key="serverPort"
+            app:title="@string/server_port"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_person_24"
+            app:key="uuid"
+            app:title="@string/uuid"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:icon="@drawable/ic_settings_password"
+            app:key="secret"
+            app:title="@string/musess_secret" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_vpn_key_24"
+            app:key="publicKey"
+            app:title="@string/musess_public_key"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/security_settings">
+        <EditTextPreference
+            app:icon="@drawable/ic_action_copyright"
+            app:key="serverName"
+            app:title="@string/musess_server_name"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/musess_options">
+        <SwitchPreference
+            app:icon="@drawable/ic_baseline_compare_arrows_24"
+            app:key="mux"
+            app:title="@string/musess_mux" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_add_road_24"
+            app:key="muxBypass"
+            app:title="@string/musess_mux_bypass"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreference
+            app:icon="@drawable/ic_baseline_compare_arrows_24"
+            app:key="muxAdaptiveBypass"
+            app:title="@string/musess_mux_adaptive_bypass" />
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_layers_24"
+            app:key="warmPool"
+            app:title="@string/musess_warm_pool"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreference
+            app:icon="@drawable/ic_baseline_speed_24"
+            app:key="deshell"
+            app:title="@string/musess_deshell" />
+        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+            app:defaultValue="off"
+            app:entries="@array/musess_fec_entry"
+            app:entryValues="@array/musess_fec_entry"
+            app:icon="@drawable/ic_baseline_security_24"
+            app:key="fec"
+            app:title="@string/musess_fec"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

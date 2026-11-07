@@ -1,9 +1,17 @@
 # MuseBox — NekoBox for Android, adapted for musess
 
-MuseBox 是 [NekoBox for Android](https://github.com/MatsuriDayo/NekoBoxForAndroid)
-（MatsuriDayo，基于 sing-box 的安卓通用代理客户端）的改版：
-把核心换成带 **musess 协议**的 sing-box，并在 App 里加入 musess 节点的导入选项
-（`musess://` 链接一键导入，也可在节点列表里新建 musess 节点）。
+## 借用声明
+
+**本项目基于 [NekoBox for Android](https://github.com/MatsuriDayo/NekoBoxForAndroid)
+（MatsuriDayo 开发，GPL-3.0 开源），借用了其全部源码，在此基础上做 musess 协议适配。
+原项目版权归 MatsuriDayo 及上游作者所有。**
+
+核心基于 [sing-box](https://github.com/SagerNet/sing-box)（SagerNet / nekohasekai，
+GPL-3.0），同样借用了其源码。
+
+MuseBox 是 NekoBox for Android 的改版：把核心换成带 **musess 协议**的 sing-box，
+并在 App 里加入 musess 节点的导入选项（`musess://` 链接一键导入，
+也可在节点列表里新建 musess 节点）。
 
 musess 协议本身见 [emmaforge/musess](https://github.com/emmaforge/musess)：
 强伪装、低延迟、丢包不卡、跑满带宽；借站直通（Wraith）。
